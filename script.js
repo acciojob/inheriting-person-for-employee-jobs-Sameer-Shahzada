@@ -1,4 +1,3 @@
-// complete this js code
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -6,7 +5,7 @@ function Person(name, age) {
 
 Person.prototype.greet = function () {
   console.log(
-    `Hello, my name is ${this.name}, I am ${this.age} years old.`
+    `Hello, my name is ${this.name} and I am ${this.age} years old.`
   );
 };
 
@@ -15,7 +14,6 @@ function Employee(name, age, jobTitle) {
   this.jobTitle = jobTitle;
 }
 
-// Inherit from Person
 Employee.prototype = Object.create(Person.prototype);
 Employee.prototype.constructor = Employee;
 
